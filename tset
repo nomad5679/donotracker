@@ -1,0 +1,10 @@
+tset
+
+$nomention
+$argsCheck[3;Invalid arguments - tset (name) (amount) (type - total, dank, etc)]
+$onlyIf[$message[3]==total; ]
+$onlyIf[$isBot[$mentioned[<;yes]]!=true;Bots dont donate :/]
+User's total donations have been set to $message[2]
+$setUserVar[donos;$message[2];$mentioned[<;yes]]
+
+$channelSendMessage[893824044032483378;$username just set $mentioned[<;yes] total donations to $message[2].]
