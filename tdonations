@@ -1,0 +1,20 @@
+tdonations
+
+$nomention
+$onlyIf[$isBot[$mentioned[<;yes]]!=true;I dont think bots would donate tbh]
+ 
+$thumbnail[$userAvatar[$mentioned[<;yes]]]
+$title[**$username[$mentioned[<;yes]] Balance**]
+$color[ffffff]
+$description[
+**Total donations:**
+$numberSeparator[$getUserVar[donos;$mentioned[<;yes]]]
+**Dank donations**
+$numberSeparator[$getUserVar[dankdonos;$mentioned[<;yes]]]
+**Epic Rpg donations**
+$numberSeparator[$getUserVar[rpgdonos;$mentioned[<;yes]]]
+**Owo donations**
+$numberSeparator[$getUserVar[owodonos;$mentioned[<;yes]]]
+]
+$footer[Requested by: $username#$discriminator[]]
+$footerIcon[$serverIcon]
